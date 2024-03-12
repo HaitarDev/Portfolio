@@ -29,8 +29,8 @@ export default function Sidebar() {
         <SheetHeader></SheetHeader>
         <ul className="flex flex-col gap-3 font-bold text-3xl text-end py-8  ">
           {navSetting.map(({ href, label }) => (
-            <>
-              <li key={href}>
+            <div key={href}>
+              <li>
                 {href === "/contact" ? (
                   <button
                     onClick={() => router.push(href)}
@@ -42,7 +42,7 @@ export default function Sidebar() {
                   <button onClick={() => router.push(href)}>{label}</button>
                 )}
               </li>
-            </>
+            </div>
           ))}
         </ul>
       </SheetContent>

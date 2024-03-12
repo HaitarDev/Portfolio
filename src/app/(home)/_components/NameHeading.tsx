@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function NameHeading() {
   return (
-    <h1 className="name-animation text-white flex flex-col font-bold text-5xl lg:text-7xl leading-10">
+    <h1 className=" name-animation text-white flex flex-col font-bold text-5xl lg:text-7xl leading-10">
       <motion.span
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
